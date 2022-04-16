@@ -1,5 +1,3 @@
-import ThreeWaterInfo from './ThreeWaterObj';
-
 const option: object = {
     method: 'post',
     url: 'http://wx.cjh.com.cn:8088/swjapp/call.nut',
@@ -25,9 +23,4 @@ const option: object = {
     }
 };
 
-const WuWeiDadi: ThreeWaterInfo = new ThreeWaterInfo('无为大堤', 11.5, 13.2, 15.84);
-const HershazhouAndTianranzhou: ThreeWaterInfo = new ThreeWaterInfo('黑沙洲、天然洲', 11.0, 13.0, 13.5);
-const YongDingDaWei: ThreeWaterInfo = new ThreeWaterInfo('永定大圩', 11.5, 13.2, 14.5);
-
-export { WuWeiDadi, HershazhouAndTianranzhou, YongDingDaWei };
 export default option;
