@@ -5,5 +5,10 @@ import { WuWeiDadi } from './ThreeWaterObj'
 
 axios(config).then(res => {
     const w = new StationInfo(res.data, WuWeiDadi);
-    console.log(w.getMessage())
+    if (w.Flag) {
+        console.log(w.getMessage())
+    } else {
+        console.error('未成功获取API接口数据')
+    }
+    
 });
